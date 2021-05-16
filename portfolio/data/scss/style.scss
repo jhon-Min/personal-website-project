@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+
+$p-font: 'Open Sans',
+sans-serif;
+$title-font: 'Baloo Paaji 2',
+cursive;
+
+$primary-col: #695aa6;
+$secondary-col: #444444;
+$text-light: #f1f1f1;
+$semi-dark: #222222;
+
+$base-size: 15px;
+$title-size: 36px;
+$co-title: 17px;
+
+@import './sidebar';
+@import './hero';
+@import './about';
+@import './service';
+@import './hire';
+@import './resume';
+@import './portfolio';
+@import './contact';
+
+p{
+    font-family: $p-font;
+    font-size: $base-size;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+// ======= Global Utili =========
+
+.co-title{
+    color: $secondary-col;
+    font-family: $p-font;
+    font-size: $co-title;
+    font-weight: 400;
+}
+
+.title{
+    color: $primary-col;
+    font-family: $title-font;
+    font-size: $title-size;
+    font-weight: bold;
+}
+
+// ====== Animation Delay =======
+.ani-delay-1 {
+    animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+    animation-delay: 1s;
+}
+
+.ani-delay-3 {
+    animation-delay: 1.5s;
+}
+
+.ani-delay-4 {
+    animation-delay: 2s;
+}
+
+.ani-delay-5 {
+    animation-delay: 2.5s;
+}
+
