@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+$title-font: 'Montserrat',
+sans-serif;
+$text-font: 'Source Sans Pro',
+sans-serif;
+
+$primary-col: #333;
+$secondary-col: #777;
+$text-light: #656565;
+$text-dark: #555;
+$but-col: #c21500;
+  
+@import '../scss/hero-and-navi';
+@import '../scss/feature';
+@import '../scss/about';
+@import '../scss/menu-and-team';
+@import '../scss/gallery';
+@import '../scss/contact';
+
+*{
+    letter-spacing: 1px;
+    // font-family: $text-font;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+// ====== General Ulti ======
+
+.title{
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 100px 0;
+    font-family: $title-font;
+        h1{
+            color: $primary-col;
+        }
+        p{
+            color: $secondary-col;
+            font-size: 12px;
+            // font-family: $text-font;
+        }
+}
+
+.hover-img{
+    background-color: $but-col !important;
+    opacity: 0.8;
+}
+
+
+// ====== Animation Delay =======
+.ani-delay-1 {
+    animation-delay: 0.5s;
+}
+
+.ani-delay-2 {
+    animation-delay: 1s;
+}
+
+.ani-delay-3 {
+    animation-delay: 1.5s;
+}
+
+.ani-delay-4 {
+    animation-delay: 2s;
+}
+
+.ani-delay-5 {
+    animation-delay: 2.5s;
+}
