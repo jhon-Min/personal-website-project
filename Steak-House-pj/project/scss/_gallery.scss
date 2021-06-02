@@ -1,0 +1,53 @@
+.gallery{
+    padding-bottom: 50px;
+
+        .show {
+            display: block;
+        }
+        h5{
+            font-family: $title-font;
+            color: $text-dark;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .gallery-hover{
+            background-color: $but-col !important;
+            opacity: 0.95;
+
+                .gallery-icon{
+                    background: white;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                        i{
+                            color: $primary-col;
+                        }
+                }
+        }
+        .gallery-link{
+
+                li{
+                    margin: 0 30px;
+                    font-size: 16px;
+                    font-family: $text-font;
+                    font-weight: bold;
+                    cursor: pointer;
+                    color: $secondary-col;
+                    transition: 0.5s;
+
+                        &:hover{
+                            color: $but-col;
+                        }
+                }
+                .select-img{
+                    color: $but-col;
+                }
+        }
+}
+
+
+
+

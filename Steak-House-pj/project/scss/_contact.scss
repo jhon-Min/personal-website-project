@@ -1,0 +1,104 @@
+.contact{
+    height: 120vh;
+    background-image: url("../img/contact-bg.jpg");
+    background-size: cover;
+    z-index: 2;
+    
+    // padding-bottom: 100px;  
+        .contact-title{
+            position: relative;
+           
+                h1{
+                    color: #ffffff;
+                    font-family: $title-font;
+                }
+                p{
+                    color: #ffffff;
+                    font-family: $text-font;
+                }
+        }
+        .contact-form{
+            background-color: transparent !important;
+            border: none !important;
+            border-bottom: 1px solid #ced4da !important;
+            border-radius: 0px !important;
+            color: white !important;
+            font-size: 18px;
+
+                &:focus{
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+        }
+        .btn-message{
+            background-color: white;
+            color: $but-col;
+            font-weight: bold;
+            padding: 10px 0;
+            font-size: 18px;
+            transition: 0.5s;
+            position: relative;
+                
+                &:hover{
+                    background-color: $but-col;
+                    color: #ffffff;
+                }
+        }
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    background: black;
+    height: 121vh;
+    width: 100%;
+    opacity: 0.7;
+    z-index: auto;
+    backdrop-filter: blur(5px);
+}
+
+@media screen and (min-height: 813px){
+    .contact{
+        height: 80vh;
+    }
+
+    .contact::before{
+        height: 80vh;
+    }
+}
+
+// ===== Footer =====
+.footer{
+    background: black; 
+    padding: 80px 0px;  
+
+        .footer-status{
+            h4{
+                color: white;
+                font-family: $title-font;
+                margin-bottom: 20px;
+            }
+            p{
+                color: $text-light;
+                font-family: $text-font;
+                font-weight: light;
+            }
+        }
+}
+
+
+// ====== Copyright Info ======
+.info-icon{
+    min-width: 70px;
+    min-height: 70px;
+    // border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+        &:hover{
+            background-color: $but-col !important;
+            
+        }
+}
